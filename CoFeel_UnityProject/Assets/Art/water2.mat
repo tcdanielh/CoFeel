@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: water
-  m_Shader: {fileID: -6465566751694194690, guid: a45243e6f0f57474f8c718a8d72e43e8,
+  m_Name: water2
+  m_Shader: {fileID: -6465566751694194690, guid: 292fe253898004a3bb3676fc07c359f4,
     type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -28,14 +28,6 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _Ripple_Tex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _Ripple_Texture:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -50,15 +42,14 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Float: 10
-    - _Normal: 1.33
+    - _Normal_Strength: 0.1
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _Smooth: 1
+    - _Smoothness: 2.07
     m_Colors:
-    - _Color: {r: 0.4009434, g: 0.7451943, b: 1, a: 0}
+    - _Color: {r: 0.4009434, g: 0.784695, b: 1, a: 0}
   m_BuildTextureStacks: []
---- !u!114 &4439708018142841929
+--- !u!114 &9060243842378206432
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
