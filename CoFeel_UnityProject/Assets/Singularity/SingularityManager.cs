@@ -15,7 +15,7 @@ namespace Sngty
         public UnityEvent onConnected;
         public UnityEvent<string> onMessageRecieved;
         public UnityEvent<string> onError;
-        
+
         private AndroidJavaClass BluetoothManager;
         private AndroidJavaObject bluetoothManager;
 
