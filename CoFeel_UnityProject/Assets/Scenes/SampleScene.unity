@@ -27357,7 +27357,7 @@ GameObject:
   - component: {fileID: 1387017223}
   - component: {fileID: 1387017224}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Pillar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27376,7 +27376,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pillar: {fileID: 1387017217}
-  Stream: {fileID: 1752510128}
+  Stream: {fileID: 0}
 --- !u!65 &1387017219
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -36213,18 +36213,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c68f2d55aff664d47b0d9ec39306d1c8, type: 3}
---- !u!114 &1752510128 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8947133669748836972, guid: c68f2d55aff664d47b0d9ec39306d1c8,
-    type: 3}
-  m_PrefabInstance: {fileID: 1752510127}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5a2e970967d4f1eb6cdca8cd5ba7206, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1758791466
 GameObject:
   m_ObjectHideFlags: 0

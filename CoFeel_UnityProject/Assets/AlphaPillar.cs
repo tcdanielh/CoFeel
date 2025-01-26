@@ -4,7 +4,7 @@ using OpenBCI.Network.Streams; // make sure you import the right thing from the 
 public class AlphaPillar : MonoBehaviour
 {
     public GameObject pillar;  // make sure you have a GameObject in the scene to represent the pillar
-    [SerializeField] private EMGStream Stream; // attach the AverageBandPowerStream from the Unity prefab
+    [SerializeField] private AverageBandPowerStream Stream; // attach the AverageBandPowerStream from the Unity prefab
     private float pillarHeight;
 
     // Start is called once before the first frame update
@@ -17,9 +17,9 @@ public class AlphaPillar : MonoBehaviour
     void Update()
     {
         // log the alpha band power value to the unity console
-        Debug.Log("Test: " + Stream.Channels[0]);
+        Debug.Log("Test: " + Stream.AverageBandPower.Alpha);
         // scale the cylinder height based on the alpha band power
-        pillarHeight = Stream.Channels[0];
+        pillarHeight = Stream.AverageBandPower.Alpha;
         pillar.transform.localScale = new Vector3(1, pillarHeight, 1);
     }
 }
