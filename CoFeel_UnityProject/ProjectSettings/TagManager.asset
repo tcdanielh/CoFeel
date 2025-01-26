@@ -8,6 +8,7 @@ TagManager:
   - LeftTrigger
   - RightTrigger
   - Ball
+  - SingularityManager
   layers:
   - Default
   - TransparentFX
