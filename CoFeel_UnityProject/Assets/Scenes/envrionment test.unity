@@ -1440,6 +1440,7 @@ GameObject:
   - component: {fileID: 1177903322}
   - component: {fileID: 1177903321}
   - component: {fileID: 1177903320}
+  - component: {fileID: 1177903323}
   m_Layer: 1
   m_Name: Particle System
   m_TagString: Untagged
@@ -1493,7 +1494,7 @@ ParticleSystemRenderer:
   m_MeshDistribution: 0
   m_SortMode: 0
   m_MinParticleSize: 0
-  m_MaxParticleSize: 0.5
+  m_MaxParticleSize: 1
   m_CameraVelocityScale: 0
   m_VelocityScale: 0
   m_LengthScale: 2
@@ -6259,6 +6260,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: -83.781, y: 93.374, z: -90}
+--- !u!114 &1177903323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1177903319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf8f12b4cf3c0fd4a905831ff709e4be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Stream: {fileID: 0}
+  particleSystem: {fileID: 0}
+  updateInterval: 5
+  windowSize: 250
 --- !u!1 &1209275039
 GameObject:
   m_ObjectHideFlags: 0
