@@ -16881,7 +16881,7 @@ MonoBehaviour:
   m_MaxConnectAttempts: 60
   m_DisconnectTimeoutMS: 30000
   ConnectionData:
-    Address: 192.168.4.9
+    Address: 192.168.4.2
     Port: 7777
     ServerListenAddress: 0.0.0.0
   DebugSimulator:
@@ -16973,7 +16973,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1f572ccfb1dd435d907be5d08f5f1f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  serverAddress: 192.168.4.9
+  serverAddress: 192.168.4.2
   port: 7777
 --- !u!1 &860929450
 GameObject:
