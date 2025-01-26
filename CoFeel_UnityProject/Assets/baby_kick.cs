@@ -21,7 +21,19 @@ public class emgKick : MonoBehaviour
     void Update()
     {
 
-        Spike();
+        NetworkEmgKick networkEmgKick = GetComponent<NetworkEmgKick>();
+            
+        // networkedBrainWaveSimulator.UpdateParticleSystemOnClients(averageValue);
+            
+        if (networkEmgKick != null)
+        {
+            networkEmgKick.UpdateKickOnClients();
+        }
+        else
+        {
+            Spike();
+        }
+        // Spike();
     }
 
     public void Spike()

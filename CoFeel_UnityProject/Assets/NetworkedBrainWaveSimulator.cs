@@ -3,11 +3,11 @@ using Unity.Netcode;
 
 public class NetworkedBrainWaveSimulator : NetworkBehaviour
 {
-    private BrainWaveSimulator brainWaveSimulator;
+    private BrainWaveSimulatorScriptLive brainWaveSimulator;
 
     void Start()
     {
-        brainWaveSimulator = GetComponent<BrainWaveSimulator>();
+        brainWaveSimulator = GetComponent<BrainWaveSimulatorScriptLive>();
     }
 
     public void UpdateParticleSystemOnClients(float value)

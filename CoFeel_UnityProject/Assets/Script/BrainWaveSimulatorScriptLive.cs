@@ -92,7 +92,7 @@ public class BrainWaveSimulatorScriptLive : MonoBehaviour
         }
     }
 
-    private void UpdateParticleSystem(float value)
+    public void UpdateParticleSystem(float value)
     {
         if (particleSystem == null) return;
 
