@@ -75,7 +75,20 @@ public class BrainWaveSimulatorScriptLive : MonoBehaviour
             timer = 0f;
             float averageValue = CalculateMovingAverage();
             Debug.Log($"Current Average Alpha Value: {averageValue}");
-            UpdateParticleSystem(averageValue);
+            
+            NetworkedBrainWaveSimulator networkedBrainWaveSimulator = GetComponent<NetworkedBrainWaveSimulator>();
+            
+            // networkedBrainWaveSimulator.UpdateParticleSystemOnClients(averageValue);
+            
+            if (networkedBrainWaveSimulator != null)
+            {
+                networkedBrainWaveSimulator.UpdateParticleSystemOnClients(averageValue);
+            }
+            else
+            {
+                UpdateParticleSystem(averageValue);
+            }
+            
         }
     }
 

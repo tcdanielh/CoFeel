@@ -20,9 +20,13 @@ public class emgKick : MonoBehaviour
     // Toggle the Object's visibility each second.
     void Update()
     {
-        Debug.Log("EMG Reading " + Stream.Channels[8]);
-        
-        // if spike
+
+        Spike();
+    }
+
+    public void Spike()
+    {
+        // Debug.Log("EMG Reading " + Stream.Channels[8]);
         if (Stream.Channels[8] > 0.8 && rend.enabled == false)
         {
             rend.enabled = true;
