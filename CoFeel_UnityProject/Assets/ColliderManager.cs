@@ -17,6 +17,10 @@ public class ColliderManager : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        if (sphereRenderer == null || singularityManager == null)
+        {
+            return;
+        }
         // Check if the hand collider enters the left trigger
         if (other.CompareTag("LeftTrigger"))
         {

@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
 using System.IO;
+using Unity.Netcode;
 
-public class BrainWaveSimulator : MonoBehaviour
+public class BrainWaveSimulator : NetworkBehaviour
 {
 
     [SerializeField] private AudioSource audioSource;
@@ -149,11 +150,22 @@ public class BrainWaveSimulator : MonoBehaviour
             lastParticleValue = normalizedValue;
             
             Debug.Log($"Current Alpha Value: {alphaBandData[currentIndex]}, Normalized: {normalizedValue}");
-            UpdateParticleSystem(lastParticleValue);
+            NetworkedBrainWaveSimulator networkedBrainWaveSimulator = GetComponent<NetworkedBrainWaveSimulator>();
+            
+            // networkedBrainWaveSimulator.UpdateParticleSystemOnClients(lastParticleValue);
+            
+            if (networkedBrainWaveSimulator != null)
+            {
+                networkedBrainWaveSimulator.UpdateParticleSystemOnClients(lastParticleValue);
+            }
+            else
+            {
+                UpdateParticleSystem(lastParticleValue);
+            }
         }
     }
 
-    private void UpdateParticleSystem(float value)
+    public void UpdateParticleSystem(float value)
     {
         if (particleSystem == null) return;
 
