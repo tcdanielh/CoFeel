@@ -36,15 +36,5 @@ public class emgKick : MonoBehaviour
                 rend.enabled = false;
             }
         }
-        // else
-        // {
-        //    rend.enabled = false;
-        // }
-        
-            // Find out whether current second is odd or even
-        // bool oddeven = Mathf.FloorToInt(Time.time) % 2 == 0;
-
-        // Enable renderer accordingly
-        // rend.enabled = oddeven;
     }
 }
