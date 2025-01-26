@@ -84,10 +84,7 @@ public class BrainWaveSimulatorScriptLive : MonoBehaviour
             {
                 networkedBrainWaveSimulator.UpdateParticleSystemOnClients(averageValue);
             }
-            else
-            {
-                UpdateParticleSystem(averageValue);
-            }
+            UpdateParticleSystem(averageValue);
             
         }
     }

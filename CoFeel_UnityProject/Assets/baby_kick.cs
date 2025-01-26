@@ -29,11 +29,7 @@ public class emgKick : MonoBehaviour
         {
             networkEmgKick.UpdateKickOnClients();
         }
-        else
-        {
-            Spike();
-        }
-        // Spike();
+        Spike();
     }
 
     public void Spike()
