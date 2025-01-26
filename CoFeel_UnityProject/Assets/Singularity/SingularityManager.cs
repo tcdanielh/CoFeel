@@ -26,9 +26,9 @@ namespace Sngty
             Bluetooth,
             Wifi
         }
-        
+
         public ConnectionType connectionType = ConnectionType.Wifi;
-        
+
         [Header("Wifi Settings")]
         public string clientIP;
         public int clientPort = 80;
@@ -155,7 +155,7 @@ namespace Sngty
             AndroidJavaClass Schedulers = new AndroidJavaClass("io.reactivex.schedulers.Schedulers");
             AndroidJavaClass AndroidSchedulers = new AndroidJavaClass("io.reactivex.android.schedulers.AndroidSchedulers");
             bluetoothManager.Call<AndroidJavaObject>("openSerialDevice", sig.mac)
-                            .Call<AndroidJavaObject>("subscribeOn",Schedulers.CallStatic<AndroidJavaObject>("io"))
+                            .Call<AndroidJavaObject>("subscribeOn", Schedulers.CallStatic<AndroidJavaObject>("io"))
                             .Call<AndroidJavaObject>("observeOn", AndroidSchedulers.CallStatic<AndroidJavaObject>("mainThread"))
                             .Call("subscribe", new RxSingleObserver(onError, onConnected, onMessageRecieved, connectedDevices));
 
@@ -217,12 +217,12 @@ namespace Sngty
 
         public void DisconnectAll()
         {
-            if(bluetoothManager != null)
+            if (bluetoothManager != null)
             {
                 bluetoothManager.Call("close");
             }
 
-            if(connectedDevices != null)
+            if (connectedDevices != null)
             {
                 connectedDevices.Clear();
             }
@@ -253,7 +253,7 @@ namespace Sngty
             private List<AndroidJavaObject> connectedDevices;
             public RxSingleObserver(UnityEvent<string> onErrorEvent, UnityEvent onConnectedEvent, UnityEvent<string> onMessageRecievedEvent, List<AndroidJavaObject> connectedDevices) : base("io.reactivex.SingleObserver")
             {
-                this.onErrorEvent = onErrorEvent; 
+                this.onErrorEvent = onErrorEvent;
                 this.onConnectedEvent = onConnectedEvent;
                 this.onMessageRecievedEvent = onMessageRecievedEvent;
                 this.connectedDevices = connectedDevices;

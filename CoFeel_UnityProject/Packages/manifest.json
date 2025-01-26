@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "com.meta.xr.sdk.all": "71.0.0",
-    "com.openbci.sdk": "file:/Users/jiaqiwang/Downloads/com.openbci.sdk-0.3.5 (1).tgz",
+    "com.openbci.sdk": "file:C:/Users/MJame/Downloads/com.openbci.sdk-0.3.5.tgz",
     "com.unity.collab-proxy": "2.6.0",
     "com.unity.ide.rider": "3.0.34",
     "com.unity.ide.visualstudio": "2.0.22",
@@ -13,6 +13,7 @@
     "com.unity.test-framework": "1.1.33",
     "com.unity.textmeshpro": "3.0.7",
     "com.unity.timeline": "1.7.6",
+    "com.unity.toolchain.win-x86_64-linux-x86_64": "2.0.10",
     "com.unity.ugui": "1.0.0",
     "com.unity.visualscripting": "1.9.4",
     "com.unity.xr.management": "4.5.0",
