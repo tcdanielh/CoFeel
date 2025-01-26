@@ -1,34 +1,23 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using System.Collections;
 
-using OpenBCI.Network.Streams;
-
-public class Outer : MonoBehaviour
+public class ExampleClass : MonoBehaviour
 {
-    [SerializeField] private EMGStream Stream;
-    public ParticleSystem particleSystem;
-    // public int detectedValue = 0; 
-    private bool isPlaying = false;
+    public Renderer rend;
 
-    void Update()
+    void Start()
     {
-        if (Stream.Channels[0] >= 0.8 || Stream.Channels[1] >= 0.8 && !isPlaying)
-        {
-            StartCoroutine(PlayParticleSystem());
-        }
-        else
-        {
-            isPlaying = false;
-        }
+        rend = GetComponent<Renderer>();
+        rend.enabled = true;
     }
 
-    private System.Collections.IEnumerator PlayParticleSystem()
+    // Toggle the Object's visibility each second.
+    void Update()
     {
-        isPlaying = true;
-        particleSystem.Play();
-        yield return new WaitForSeconds(1f);
-        particleSystem.Stop();
-        isPlaying = false;
+        // Find out whether current second is odd or even
+        bool oddeven = Mathf.FloorToInt(Time.time) % 2 == 0;
+
+        // Enable renderer accordingly
+        rend.enabled = oddeven;
     }
 }

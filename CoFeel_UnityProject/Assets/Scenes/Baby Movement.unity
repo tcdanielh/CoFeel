@@ -11536,7 +11536,7 @@ ParticleSystem:
         atime6: 0
         atime7: 0
         m_Mode: 0
-        m_ColorSpace: -1
+        m_ColorSpace: 0
         m_NumColorKeys: 2
         m_NumAlphaKeys: 2
       minGradient:
@@ -14986,8 +14986,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb2e228827b94e24bbdb8a408680fefb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  particleSystem: {fileID: 0}
-  detectedValue: 0
+  rend: {fileID: 1293662180}
 --- !u!1 &1513966965
 GameObject:
   m_ObjectHideFlags: 0
@@ -15019,8 +15018,8 @@ Transform:
   m_Children:
   - {fileID: 523964890}
   - {fileID: 1931531603}
-  - {fileID: 663551976}
   - {fileID: 1293662182}
+  - {fileID: 663551976}
   - {fileID: 1139802191}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

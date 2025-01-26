@@ -116,7 +116,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.burst": {
-      "version": "1.8.18",
+      "version": "1.8.17",
       "depth": 1,
       "source": "registry",
       "dependencies": {
@@ -182,7 +182,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.inputsystem": {
-      "version": "1.11.2",
+      "version": "1.11.0",
       "depth": 1,
       "source": "registry",
       "dependencies": {
@@ -279,7 +279,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.services.core": {
-      "version": "1.14.0",
+      "version": "1.12.5",
       "depth": 1,
       "source": "registry",
       "dependencies": {
@@ -446,7 +446,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.xr.legacyinputhelpers": {
-      "version": "2.1.11",
+      "version": "2.1.10",
       "depth": 1,
       "source": "registry",
       "dependencies": {
