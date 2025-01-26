@@ -6,7 +6,7 @@ using System.IO;
 
 using OpenBCI.Network.Streams;
 
-public class BrainWaveSimulator : MonoBehaviour
+public class BrainWaveSimulatorScriptLive : MonoBehaviour
 {
     
 
