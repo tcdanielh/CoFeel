@@ -90,24 +90,26 @@ public class BrainWaveSimulator : MonoBehaviour
             mainModule.startSize = 1f;
             newState = "calm";
             isCalm = true;
+            Debug.Log("Very calm");
         }
         else if (value > 0.5f) {
             mainModule.startSize = 2f;
             newState = "calm";
             isCalm = true;
+            Debug.Log("Calm");
         }
         else if (value > 0.25f) {
             mainModule.startSize = 25f;
             newState = "alert";
             isCalm = false;
+            Debug.Log("Alert");
         }
         else {
             mainModule.startSize = 50f;
             newState = "alert";
             isCalm = false;
+            Debug.Log("Very alert");
         }
-
-        Debug.Log(newState);
 
         // if (newState != currentState)
         // {
